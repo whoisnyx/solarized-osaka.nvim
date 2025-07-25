@@ -3,13 +3,13 @@ local M = {}
 function M.get(c, options)
   -- stylua: ignore
   return {
-    ColorColumn                 = { bg = c.base02 }, -- used for the columns set with 'colorcolumn'
+    ColorColumn                 = { bg = c.base05 }, -- used for the columns set with 'colorcolumn'
     Conceal                     = { fg = c.blue500 }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     Cursor                      = { fg = c.base03, bg = c.base0 }, -- character under the cursor
     lCursor                     = { fg = c.base03, bg = c.base00 }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM                    = { fg = c.base03, bg = c.base0 }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn                = { bg = c.base02 }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine                  = { bg = c.base03, sp = c.base1 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine                  = { bg = c.base06, sp = c.base1 }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory                   = { fg = c.blue500 }, -- directory names (and other special names in listings)
     DiffAdd                     = { fg = c.green500, bg = c.base02, bold = true }, -- diff mode: Added line |diff.txt|
     DiffChange                  = { fg = c.yellow500, bg = c.base02, bold = true }, -- diff mode: Changed line |diff.txt|
@@ -26,9 +26,9 @@ function M.get(c, options)
     SignColumn                  = { fg = c.base0 }, -- column where |signs| are displayed
     SignColumnSB                = { fg = c.base0 }, -- column where |signs| are displayed
     Substitute                  = { fg = c.base04, bg = c.red500 }, -- |:substitute| replacement text highlighting
-    LineNr                      = { fg = c.yellow700, bg = options.transparent and c.none or c.bg }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    CursorLineNr                = { fg = c.orange500, sp = c.base1 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-    MatchParen                  = { fg = c.red100, bg = c.red500, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    LineNr                      = { fg = c.blue900, bg = options.transparent and c.none or c.bg }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    CursorLineNr                = { fg = c.blue500, sp = c.base1 }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    MatchParen                  = { fg = c.blue500, bg = c.blue900, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg                     = { fg = c.blue500 }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea                     = { fg = c.base01 }, -- Area for messages and cmdline
     -- MsgSeparator= { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -38,29 +38,29 @@ function M.get(c, options)
     NormalNC                    = { fg = c.base00, bg = options.transparent and c.none or options.dim_inactive and c.base04 or c.bg }, -- normal text in non-current windows
     NormalSB                    = { fg = c.base01, bg = c.bg_sidebar }, -- normal text in sidebar
     NormalFloat                 = { fg = c.base0, bg = c.bg_float }, -- Normal text in floating windows.
-    FloatBorder                 = { fg = c.yellow700, bg = c.bg_float },
+    FloatBorder                 = { fg = c.blue900, bg = c.bg_float },
     FloatTitle                  = { fg = c.base2, bg = c.bg_float },
-    Pmenu                       = { fg = c.base0, bg = c.base02 }, -- Popup menu: normal item.
-    PmenuSel                    = { fg = c.base01, bg = c.base2, reverse = true }, -- Popup menu: selected item.
-    PmenuSbar                   = { fg = c.base02, reverse = true }, -- Popup menu: scrollbar.
-    PmenuThumb                  = { fg = c.base0, reverse = true }, -- Popup menu: Thumb of the scrollbar.
+    Pmenu                       = { fg = c.base0, bg = c.base04 }, -- Popup menu: normal item.
+    PmenuSel                    = { fg = c.base05, bg = c.base0, reverse = true }, -- Popup menu: selected item.
+    PmenuSbar                   = { fg = c.base05, reverse = true }, -- Popup menu: scrollbar.
+    PmenuThumb                  = { fg = c.base05, reverse = true }, -- Popup menu: Thumb of the scrollbar.
     Question                    = { fg = c.cyan500, bold = true }, -- |hit-enter| prompt and yes/no questions
     QuickFixLine                = { bg = c.blue700, bold = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
-    Search                      = { fg = c.yellow500, reverse = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-    IncSearch                   = { fg = c.base2, bg = c.orange500 }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    Search                      = { fg = c.blue500, reverse = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
+    IncSearch                   = { fg = c.blue900, bg = c.blue500 }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch                   = "IncSearch",
     SpecialKey                  = { fg = c.base00 }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad                    = { sp = c.red500, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     SpellCap                    = { sp = c.violet500, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal                  = { sp = c.cyan500, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare                   = { sp = c.yellow500, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-    StatusLine                  = { fg = c.base1, bg = c.base03 }, -- status line of current window
+    StatusLine                  = { fg = c.base1, bg = c.base05 }, -- status line of current window
     StatusLineNC                = { fg = options.hide_inactive_statusline and c.bg or c.base0, bg = options.hide_inactive_statusline and c.none or c.base04, sp = options.hide_inactive_statusline and c.border or c.none, underline = options.hide_inactive_statusline and true or false }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-    TabLine                     = { fg = c.base0, bg = c.base02, sp = c.base0 }, -- tab pages line, not active tab page label
-    TabLineFill                 = { fg = c.base0, bg = c.base02 }, -- tab pages line, where there are no labels
-    TabLineSel                  = { fg = c.yellow500, bg = c.bg }, -- tab pages line, active tab page label
-    Title                       = { fg = c.orange500, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
-    Visual                      = { bg = c.base02 }, -- Visual mode selection
+    TabLine                     = { fg = c.base0, bg = c.none, sp = c.base0}, -- tab pages line, not active tab page label
+    TabLineFill                 = { fg = c.base0, bg = c.none }, -- tab pages line, where there are no labels
+    TabLineSel                  = { fg = c.yellow500, bg = c.none }, -- tab pages line, active tab page label
+    Title                       = { fg = c.blue800, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
+    Visual                      = { bg = c.base05 }, -- Visual mode selection
     VisualNOS                   = { bg = c.base03, reverse = true }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg                  = { fg = c.orange500, bold = true }, -- warning messages
     Whitespace                  = { fg = c.base01 }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
@@ -71,12 +71,12 @@ function M.get(c, options)
     -- These groups are for the native LSP client. Some other LSP clients may
     -- use these groups, or use their own. Consult your LSP client's
     -- documentation.
-    LspReferenceText            = { bg = c.magenta900 }, -- used for highlighting "text" references
-    LspReferenceRead            = { bg = c.magenta900 }, -- used for highlighting "read" references
-    LspReferenceWrite           = { bg = c.magenta900 }, -- used for highlighting "write" references
+    LspReferenceText            = { bg = c.blue900 }, -- used for highlighting "text" references
+    LspReferenceRead            = { bg = c.blue900 }, -- used for highlighting "read" references
+    LspReferenceWrite           = { bg = c.blue900 }, -- used for highlighting "write" references
     LspSignatureActiveParameter = { bg = c.base03, bold = true },
     LspCodeLens                 = { fg = c.base01 },
-    LspInlayHint                = { bg = c.violet900, fg = c.violet500 },
+    LspInlayHint                = { bg = c.blue900, fg = c.blue500, italic = true},
     LspInfoBorder               = { fg = c.base02, bg = c.bg_float },
 
     DiagnosticError             = { fg = c.error }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default

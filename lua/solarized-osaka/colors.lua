@@ -7,14 +7,18 @@ local M = {}
 ---@class Palette
 M.default = {
   none = "NONE",
-
+  base06 = hsl(192, 100, 7),
+  base055 = hsl(192, 100, 9),
+  base05 = hsl(192, 100, 8),
+  base045 = hsl(192, 100, 2),
   base04 = hsl(192, 100, 5),
-  base03 = hsl(192, 100, 11),
+  base035 = hsl(192, 100, 10),
+  base03 = hsl(192, 100, 12),
   base02 = hsl(192, 81, 14),
   base01 = hsl(194, 14, 40),
   base00 = hsl(196, 13, 45),
   -- base0 = hsl( 186, 8, 55 ),
-  base0 = hsl(186, 8, 65),
+  base0 = hsl(186, 8, 55),
   -- base1 = hsl( 180, 7, 60 ),
   base1 = hsl(180, 7, 70),
   base2 = hsl(46, 42, 88),
@@ -54,8 +58,13 @@ M.default = {
   blue100 = hsl(205, 100, 83),
   blue300 = hsl(205, 90, 62),
   blue500 = hsl(205, 69, 49),
+  blue600 = hsl(205, 69, 41),
   blue700 = hsl(205, 70, 35),
+  blue800 = hsl(205, 70, 30),
+  blue850 = hsl(205, 69, 25),
   blue900 = hsl(205, 69, 20),
+  blue950 = hsl(205, 70, 16),
+  blue1000 = hsl(205, 70, 12),
   cyan = hsl(175, 59, 40),
   cyan100 = hsl(176, 100, 86),
   cyan300 = hsl(175, 85, 55),
@@ -66,6 +75,7 @@ M.default = {
   green100 = hsl(90, 100, 84),
   green300 = hsl(76, 100, 49),
   green500 = hsl(68, 100, 30),
+  green600 = hsl(68, 100, 25),
   green700 = hsl(68, 100, 20),
   green900 = hsl(68, 100, 10),
 
@@ -98,7 +108,7 @@ function M.setup(opts)
 
   -- Popups and statusline always get a dark background
   colors.bg_popup = colors.base04
-  colors.bg_statusline = colors.base03
+  colors.bg_statusline = colors.base05
 
   -- Sidebar and Floats are configurable
   colors.bg_sidebar = config.options.styles.sidebars == "transparent" and colors.none

@@ -9,8 +9,8 @@ function M.get(c, opts)
 
     CmpItemAbbr              = { fg = c.fg, bg = c.none },
     CmpItemAbbrDeprecated    = { fg = c.base01, bg = c.none, strikethrough = true },
-    CmpItemAbbrMatch         = { fg = c.violet500, bg = c.none },
-    CmpItemAbbrMatchFuzzy    = { fg = c.violet500, bg = c.none },
+    CmpItemAbbrMatch         = { fg = c.blue500, bg = c.none },
+    CmpItemAbbrMatchFuzzy    = { fg = c.blue500, bg = c.none },
 
     CmpItemMenu              = { fg = c.base01, bg = c.none },
 

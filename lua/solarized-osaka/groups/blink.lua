@@ -6,20 +6,20 @@ function M.get(c, opts)
     BlinkCmpLabel                        = { fg = c.fg, bg = c.none },
     BlinkCmpLabelDeprecated              = { fg = c.base01, bg = c.none, strikethrough = true },
     --INFO: unused at the moment but passed still for future use
-    BlinkCmpLabelMatch                   = { fg = c.violet500, bg = c.none },
+    BlinkCmpLabelMatch                   = { fg = c.blue500, bg = c.none },
     -- Documentation windows
     BlinkCmpDoc                          = { fg = c.fg, bg = c.bg_float },
     BlinkCmpDocBorder                    = { fg = c.base02, bg = c.bg_float },
     BlinkCmpGhostText                    = { fg = c.base01 },
     -- Signature help
-    BlinkCmpSignatureHelp                = { fg = c.violet500, bg = c.none },
+    BlinkCmpSignatureHelp                = { fg = c.base01, bg = c.none },
     BlinkCmpSignatureHelpBorder          = { fg = c.base02, bg = c.none },
-    BlinkCmpSignatureHelpActiveParameter = { fg = c.orange, bg = c.none },
+    BlinkCmpSignatureHelpActiveParameter = { fg = c.base01, bg = c.none },
     -- ISSUE: passing c.none causes menu to be invisible
     -- BlinkCmpMenu = { fg = c.base01, bg = c.none },
-    BlinkCmpMenu                         = { fg = c.base01, bg = c.base02 },
+    BlinkCmpMenu                         = { fg = c.base00, bg = c.base04 },
     BlinkCmpKind                         = { fg = c.base01, bg = c.none },
-    BlinkCmpKindCodeium                  = { fg = c.cyan500, bg = c.none },
+     BlinkCmpKindCodeium                  = { fg = c.cyan500, bg = c.none },
     BlinkCmpKindCopilot                  = { fg = c.cyan500, bg = c.none },
     BlinkCmpKindTabNine                  = { fg = c.cyan500, bg = c.none },
     BlinkCmpKindSupermaven               = { fg = c.cyan500, bg = c.none },
