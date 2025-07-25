@@ -109,7 +109,7 @@ function M.setup()
       config.setup({ style = style, use_background = "auto", transparent = false })
       local colors = require("solarized-osaka.colors").setup({ transform = true })
       local fname = extra .. "/solarized_osaka_" .. style .. "." .. info.ext
-      colors["_upstream_url"] = "https://github.com/craftzdog/solarized-osaka.nvim/raw/main/extras/" .. fname
+      colors["_upstream_url"] = "https://github.com/whoisnyx/solarized-osaka.nvim/raw/main/extras/" .. fname
       colors["_style_name"] = "Solarized Osaka" .. style_name
       write(plugin.generate(colors), fname)
     end
