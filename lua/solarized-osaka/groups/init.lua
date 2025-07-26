@@ -61,7 +61,10 @@ M.plugins = {
   ["vim-illuminate"]                = "illuminate",
   ["vim-sneak"]                     = "sneak",
   ["which-key.nvim"]                = "which-key",
-  ["yanky.nvim"]                    = "yanky"
+  ["yanky.nvim"]                    = "yanky",
+  ["ChatGPT.nvim"]                    = "chatgpt",
+  ["nvim-dap-ui"]                    = "dap",
+
 }
 
 function M.get_group(name)

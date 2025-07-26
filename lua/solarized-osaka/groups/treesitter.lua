@@ -69,6 +69,7 @@ function M.get(c, opts)
     ["@punctuation.delimiter"]        = { fg = c.blue1000 }, -- For delimiters ie: `.`
     ["@punctuation.bracket"]          = { fg = c.blue950 }, -- For brackets and parens.
     ["@punctuation.special"]          = { fg = c.base01 }, -- For special punctutation that does not fall in the catagories before.
+    ["@tag.builtin"] = {fg = c.green500},
     ["@punctuation.special.markdown"] = { fg = c.blue950, bold = true },
     ["@markup.list"]                  = { fg = c.blue500 }, -- For special punctutation that does not fall in the catagories before.
     ["@markup.list.markdown"]         = { fg = c.orange500, bold = true },

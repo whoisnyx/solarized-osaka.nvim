@@ -39,7 +39,7 @@ function M.get(c, options)
     NormalSB                    = { fg = c.base01, bg = c.bg_sidebar }, -- normal text in sidebar
     NormalFloat                 = { fg = c.base0, bg = c.bg_float }, -- Normal text in floating windows.
     FloatBorder                 = { fg = c.blue900, bg = c.bg_float },
-    FloatTitle                  = { fg = c.base2, bg = c.bg_float },
+    FloatTitle                  = { fg = "#195a89", bg = c.bg_float },
     Pmenu                       = { fg = c.base0, bg = c.base04 }, -- Popup menu: normal item.
     PmenuSel                    = { fg = c.base05, bg = c.base0, reverse = true }, -- Popup menu: selected item.
     PmenuSbar                   = { fg = c.base05, reverse = true }, -- Popup menu: scrollbar.
