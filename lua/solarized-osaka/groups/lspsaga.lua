@@ -21,6 +21,7 @@ function M.get(c, opts)
     DefinitionIcon             = { fg = c.blue },
     ReferencesIcon             = { fg = c.blue },
     TargetWord                 = { fg = c.cyan500 },
+    SagaTitle = {fg = c.blue500}
   }
 end
 

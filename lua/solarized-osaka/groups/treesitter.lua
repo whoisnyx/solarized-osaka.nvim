@@ -137,6 +137,9 @@ function M.get(c, opts)
     ["@tag.javascript"]               = { fg = c.green500 },
     ["@variable.javascript"]          = { fg = c.blue800 },
 
+
+    -- Cpp
+    ["@lsp.typemod.typeParameter.readonly.cpp"] = {fg = c.blue500}
   }
 end
 
