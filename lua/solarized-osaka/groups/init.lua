@@ -64,6 +64,7 @@ M.plugins = {
   ["yanky.nvim"]                    = "yanky",
   ["ChatGPT.nvim"]                    = "chatgpt",
   ["nvim-dap-ui"]                    = "dap",
+  ["copilot.vim"] = "copilot",
 
 }
 
