@@ -24,7 +24,7 @@ function M.get(c, opts)
     -- Exception     = { }, --  try, catch, throw
 
     PreProc                  = { fg = c.base00 }, -- (preferred) generic Preprocessor
-     Include       = { fg = c.green500}, --  preprocessor #include
+    Include       = { fg = c.green500}, --  preprocessor #include
     -- Define        = { }, --   preprocessor #define
     -- Macro         = { }, --    same as Define
     -- PreCondit     = { }, --  preprocessor #if, #else, #endif, etc.

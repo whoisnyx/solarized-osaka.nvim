@@ -80,7 +80,7 @@ function M.get(c, opts)
     ["@string.escape"]                = { fg = c.blue700 }, -- For escape characters within a string.
 
     -- Functions
-    ["@constructor"]                  = { fg = c.blue900 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+    ["@constructor"]                  = { fg = c.blue800 }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
     ["@variable.parameter"]           = { fg = c.blue500 }, -- For parameters of a function.
     ["@variable.parameter.builtin"]   = { fg = c.blue900 }, -- For builtin parameters of a function, e.g. "..." or Smali's p[1-99]
 
@@ -137,9 +137,19 @@ function M.get(c, opts)
     ["@tag.javascript"]               = { fg = c.green500 },
     ["@variable.javascript"]          = { fg = c.blue800 },
 
+    -- lua
+    ["@constructor.lua"] = {fg  = c.blue900},
 
     -- Cpp
-    ["@lsp.typemod.typeParameter.readonly.cpp"] = {fg = c.blue500}
+    ["@lsp.typemod.typeParameter.readonly.cpp"] = {fg = c.blue500},
+    ["@keyword.directive.cpp"] = {fg = c.green500},
+    ["@keyword.directive.include.cpp"] = {fg = c.green500},
+    ["@keyword.directive.define.cpp"] = {fg = c.green500},
+    ["@keyword.directive.undef.cpp"] = {fg = c.green500},
+    ["@keyword.directive.ifdef.cpp"] = {fg = c.green500},
+    ["@keyword.directive.ifndef.cpp"] = {fg = c.green500},
+    ["@keyword.directive.else.cpp"] = {fg = c.green500},
+    ["@keyword.directive.endif.cpp"] = {fg = c.green500},
   }
 end
 
