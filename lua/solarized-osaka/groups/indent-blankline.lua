@@ -5,7 +5,7 @@ function M.get(c, opts)
   return {
     IblIndent                  = { fg = c.base06, nocombine = true },
     IndentBlanklineChar        = { fg = c.base06, nocombine = true },
-    IndentBlanklineContextChar = { fg = c.orange500, nocombine = true },
+    IndentBlanklineContextChar = { fg = c.blue500, nocombine = true },
   }
 end
 
