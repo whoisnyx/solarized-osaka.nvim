@@ -122,7 +122,7 @@ function M.get(c, opts)
     ["@keyword.tsx"]                  = { fg = c.green500, italic = false},
 
     -- typescript
-    ["@variable.typescript"]          = { fg = c.green500 },
+    ["@variable.typescript"]          = { fg = c.base00 },
 
     -- Vue
     ["@tag.delimiter.vue"]            = { fg = c.green500 },
