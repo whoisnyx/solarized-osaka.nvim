@@ -115,14 +115,21 @@ function M.get(c, opts)
     ["@module"]                       = "PreProc",
 
     -- tsx
+    ["@keyword.import.tsx"]           = { fg = c.green500 },
     ["@constructor.tsx"]              = { fg = c.blue500 },
+    ["@keyword.coroutine.tsx"]        = { fg = c.base0 },
+    ["@type.tsx"]                     = { fg = c.base0 },
     ["@tag.delimiter.tsx"]            = { fg = c.blue900 },
-    ["@tag.tsx"]                      = { fg = c.green500 },
+    ["@tag.tsx"]                      = { fg = c.base00 },
+    ["@tag.builtin.tsx"]              = { fg = c.green500 },
     ["@keyword.return.tsx"]           = { fg = c.green500, italic = false},
     ["@keyword.tsx"]                  = { fg = c.green500, italic = false},
 
     -- typescript
     ["@variable.typescript"]          = { fg = c.base0 },
+    ["@type.typescript"]              = { fg = c.base0 },
+    ["@type.builtin.typescript"]      = { fg = c.base0 },
+    ["@lsp.type.type.typescript"]     = { fg = c.base00 },
 
     -- Vue
     ["@tag.delimiter.vue"]            = { fg = c.green500 },
